@@ -1,0 +1,26 @@
+[project]
+name = "miscellaneous-topic-in-python"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Abhisek Rout", email = "abhisekrout48@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "argon2-cffi",
+    "fastapi[standard]>=0.143.0",
+    "httpx2>=2.13.1",
+    "ipykernel",
+    "pip>=26.2.1",
+]
+
+[project.scripts]
+miscellaneous-topic-in-python = "miscellaneous_topic_in_python:main"
+
+[build-system]
+requires = ["uv_build>=0.12.5,<0.13.0"]
+build-backend = "uv_build"
+
+[tool.uv]
+package = false
